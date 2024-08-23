@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rob & Kukkik's Wedding Invitation</title>
+    <link rel="stylesheet" href="styles/card.css">
+    <link type="text/css" rel="stylesheet" href="styles/card-large.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Rob & Kukkik's Wedding Invitation">
+    <meta property="og:type" content="website">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo-link">
+            <img src="images/rk.webp" alt="Rob and Kukkik" class="logo" loading="lazy" width="100"
+                height="100"><h1>Rob & Kukkik: Together Forever</h1>
+            </a>
+        </header>
+        <nav id="animateme">
+            <button id="menuButton" aria-label="Menu"></button>
+            <ul class=" menuLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="rsvp.html" class="nav-link">RSVP</a></li>
+                <li><a href="message.html" class="nav-link">Message</a></li>
+            </ul>
+        </nav>
+
+        <section class="invitation">
+            <div class="photo">
+                <source srcset="images/hero-small.webp" media="(max-width: 599px)">
+                <img src="images/hero-large.webp" alt="Rob and Kukkik" loading="lazy" width="2" height="1">
+            </div>
+            <p class="intro">We are thrilled to invite you to join us as we celebrate our wedding!</p>
+            <div class="details">
+                <h2>Sealing</h2>
+                <p><strong>Date:</strong> September 21, 2024</p>
+                <p><strong>Time:</strong> 10:30 AM</p>
+                <p><strong>Location:</strong> Portland, Oregon Temple</p>
+                
+                <h2>Reception</h2>
+                <p><strong>Date:</strong> September 21, 2024</p>
+                <p><strong>Time:</strong> 6:00 PM</p>
+                <p><strong>Location:</strong> 1420 Brown Rd. West, Chehalis WA 98532</p>
+                
+                <div class="map">
+                    <h2>Reception Location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.216167067957!2d-122.96407308463208!3d46.69705507917533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490620c28ab1177%3A0x7b535d99a527e3e5!2s1420%20Brown%20Rd%20W%2C%20Chehalis%2C%20WA%2098532%2C%20USA!5e0!3m2!1sen!2sth!4v1695694915194!5m2!1sen!2sth" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="rsvp">
+            <h2>RSVP</h2>
+            <p>Please confirm your attendance and the number of guests:</p>
+            <a href="https://your-rsvp-link.com" class="rsvp-button">Confirm Attendance</a>
+        </section>
+
+        <section class="messages">
+            <h2>Send Us a Message</h2>
+            <p>Feel free to leave a message or well-wishes for us:</p>
+            <textarea id="message" placeholder="Your message here..."></textarea>
+            <button onclick="showMessage()">Send</button>
+            <div id="thank-you-message" class="thank-you-message"></div>
+        </section>
+
+        <footer>
+            <p>Contact us at 📧 adeezon9@gmail.com | Tel ☏+1(360)827-0840</p>
+            &copy;<span id="currentYear"></span><strong> Rob & Kukkik: Together Forever</strong> |
+            ⚙️Last Modified: <span id="lastModified"></span>
+        </footer>
+    </div>
+    
+    
+    <script src="scripts/foot.js"></script>
+    <script src="scripts/card.js"></script>
+</body>
+
+
+</html>

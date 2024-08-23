@@ -1,0 +1,188 @@
+
+:root {
+--heading-font: "Dancing Script", cursive;
+--paragraph-font: "Merriweather", serif;
+--primary-color:#9b356e;
+--secoundary-color: #717070;
+--hover-color: #57153a;
+--link-color: #dac0c9; 
+--decoration-color: #b0864e;
+--text-color: #232e37;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    font-weight: bold;
+  }
+
+
+nav a {
+    display: block;
+    text-align: center;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+nav a:hover  {
+    color: var(--primary-color);
+    background-color: var(--link-color);
+  }
+
+.active {
+    background-color: var(--hover-color);
+  }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-style: bold;
+    font-optical-sizing: auto;
+    font-family: var(--heading-font);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: var(--primary-color); /* Rose Gold */
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--hover-color), 0 0 20px var(--hover-color), 0 0 25px var(--hover-color), 0 0 30px var(--hover-color);
+    }
+
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 15px var(--decoration-color), 0 0 20px var(--decoration-color), 0 0 25px var(), 0 0 30px var(--decoration-color);
+    }
+}
+
+
+.invitation {
+    text-align: center;
+}
+
+.invitation .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.intro {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #9b356e; /* Pink */
+}
+
+.details h2 {
+    color: #717070; /* Gray */
+    margin-top: 20px;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.map {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.rsvp {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.rsvp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8b6106; /* Gold */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.rsvp-button:hover {
+    background-color: #da9f4d; /* Darker Gold */
+}
+
+.messages {
+    margin-top: 30px;
+}
+
+.messages h2 {
+    color: #717070; /* Gray */
+}
+
+.messages textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.messages button {
+    padding: 10px 20px;
+    background-color: #854949; /* Pink */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.messages button:hover {
+    background-color: #b76c6c; /* Darker Pink */
+}
+
+.thank-you-message {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #4CAF50; /* Green */
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    background-color: #9b356e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: small;
+}
