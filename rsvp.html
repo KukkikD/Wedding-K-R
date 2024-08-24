@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rob & Kukkik's Wedding RSVP</title>
+    <link rel="stylesheet" href="styles/card.css">
+    <link type="text/css" rel="stylesheet" href="styles/card-large.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Rob & Kukkik's Wedding Invitation">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kukkikd.github.io/Wedding-K-R/images/rk.png">
+    <meta property="og:url" content="https://kukkikd.github.io/Wedding-K-R/index.html">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo-link">
+            <img src="images/rk.webp" alt="Rob and Kukkik" class="logo" loading="lazy" width="100"
+                height="100"><h1>Rob & Kukkik: Together Forever</h1>
+            </a>
+        </header>
+        <nav id="animateme">
+            <button id="menuButton" aria-label="Menu"></button>
+            <ul class=" menuLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="rsvp.html" class="nav-link">RSVP</a></li>
+                <li><a href="message.html" class="nav-link">Message</a></li>
+            </ul>
+        </nav>
+
+        <img class = "img-rsvp" src="images/rk.webp" alt="Rob and Kukkik" loading="lazy" width="200" height="200">
+
+        <div class="rsvp-container">
+            <h2>💌RSVP Form💌</h2>
+            <form id="rsvpForm" action="/submit-rsvp" method="POST">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+        
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+        
+                <label for="adults">Number of Adults:</label>
+                <input type="number" id="adults" name="adults" min="0" required>
+        
+                <label for="youths">Number of Youth (ages 12-17):</label>
+                <input type="number" id="youths" name="youths" min="0" required>
+        
+                <label for="children">Number of Children (under 12):</label>
+                <input type="number" id="children" name="children" min="0" required>
+        
+                <button type="submit">Submit RSVP</button>
+            </form>
+        
+    </div>  
+        <footer>
+            <p>Contact us at 📧 adeezon9@gmail.com | Tel ☏+1(360)827-0840</p>
+            &copy;<span id="currentYear"></span><strong> Rob & Kukkik: Together Forever</strong> |
+            ⚙️Last Modified: <span id="lastModified"></span>
+        </footer>
+    
+    
+        <script src="scripts/foot.js"></script>
+        <script src="scripts/rsvp.js"></script> 
+    
+</body>
+
+</html>

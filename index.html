@@ -38,23 +38,25 @@
                 <source srcset="images/hero-small.webp" media="(max-width: 599px)">
                 <img src="images/hero-large.webp" alt="Rob and Kukkik" loading="lazy" width="2" height="1">
             </div>
-            <p class="intro">We are thrilled to invite you to join us as we celebrate our wedding!</p>
+            <p class="intro"><strong>We are thrilled to invite you to join us as we celebrate our wedding!</strong></p>
+            <iframe width="0.5" height="0.5" src="https://www.youtube.com/embed/Ptk_1Dc2iPY?autoplay=1&loop=1&playlist=Ptk_1Dc2iPY" frameborder="0" allow="autoplay" style="visibility: hidden;"></iframe>
+            
             <div class="details">
-                <h2>Sealing</h2>
+                <h2>💒Sealing💍</h2>
                 <p><strong>Date:</strong> September 21, 2024</p>
                 <p><strong>Time:</strong> 10:30 AM</p>
                 <p><strong>Location:</strong> Portland, Oregon Temple</p>
-                
-                <h2>Reception</h2>
+               
+                <h2>🥂Reception🎉</h2> 
                 <p><strong>Date:</strong> September 21, 2024</p>
                 <p><strong>Time:</strong> 6:00 PM</p>
                 <p><strong>Location:</strong> 1420 Brown Rd. West, Chehalis WA 98532</p>
-                
+
                 <div class="map">
-                    <h2>Reception Location</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.216167067957!2d-122.96407308463208!3d46.69705507917533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490620c28ab1177%3A0x7b535d99a527e3e5!2s1420%20Brown%20Rd%20W%2C%20Chehalis%2C%20WA%2098532%2C%20USA!5e0!3m2!1sen!2sth!4v1695694915194!5m2!1sen!2sth" 
+                    <h2>🏡Reception Location📍</h2>
+                    <iframe class = "gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.216167067957!2d-122.96407308463208!3d46.69705507917533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490620c28ab1177%3A0x7b535d99a527e3e5!2s1420%20Brown%20Rd%20W%2C%20Chehalis%2C%20WA%2098532%2C%20USA!5e0!3m2!1sen!2sth!4v1695694915194!5m2!1sen!2sth" 
                             width="600" 
-                            height="450" 
+                            height="350" 
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy" 
@@ -64,14 +66,22 @@
             </div>
         </section>
 
+        <h3>🌤️Weather on September 21, 2024☔</h3>
+        <div id="weather-card">
+            <div id="weather-info">
+                <img id="icon" src="" alt="">
+                <p id="temperature">--</p>
+                <p id="description">--</p>
+        </div>
+
         <section class="rsvp">
-            <h2>RSVP</h2>
+            <h2>💌RSVP💌</h2>
             <p>Please confirm your attendance and the number of guests:</p>
-            <a href="https://your-rsvp-link.com" class="rsvp-button">Confirm Attendance</a>
+            <a href="rsvp.html" class="rsvp-button">Confirm Attendance</a>
         </section>
 
         <section class="messages">
-            <h2>Send Us a Message</h2>
+            <h2>📝Send Us a Message💬</h2>
             <p>Feel free to leave a message or well-wishes for us:</p>
             <textarea id="message" placeholder="Your message here..."></textarea>
             <button onclick="showMessage()">Send</button>
@@ -83,10 +93,12 @@
             &copy;<span id="currentYear"></span><strong> Rob & Kukkik: Together Forever</strong> |
             ⚙️Last Modified: <span id="lastModified"></span>
         </footer>
-    </div>
-        
-    <script src="scripts/foot.js"></script>
-    <script src="scripts/card.js"></script>
+    
+     </div>  
+        <script src="scripts/foot.js"></script>
+        <script src="scripts/card.js"></script> 
+        <script src="scripts/weather.js"></script> 
+    
 </body>
 
 </html>
