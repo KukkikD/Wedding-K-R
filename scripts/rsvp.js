@@ -1,5 +1,5 @@
 // Define the URL for JSON data and the thank you page URL
-const jsonURL = 'https://kukkikd.github.io/weddingkr/rsvp.json; // URL for storing RSVP data
+const jsonURL = 'https://kukkikd.github.io/weddingkr/rsvp.json'; // URL for storing RSVP data//
 
 document.addEventListener('DOMContentLoaded', () => {
     const rsvpForm = document.getElementById('rsvp-form');
