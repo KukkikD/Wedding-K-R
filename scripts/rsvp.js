@@ -1,9 +1,8 @@
-// Define the URL for JSON data and the thank you page URL
-const jsonURL = 'https://kukkikd.github.io/weddingkr/rsvp.json'; // URL for storing RSVP data//
+// Define the URL for the thank you page
+const thankYouPageURL = 'https://kukkikd.github.io/wedding/thankyou.html';
 
 document.addEventListener('DOMContentLoaded', () => {
     const rsvpForm = document.getElementById('rsvp-form');
-    const confirmationMessage = document.getElementById('confirmation-message');
 
     if (!rsvpForm) {
         console.error('Error: RSVP form element is not found in the document.');
@@ -15,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData(rsvpForm);
         const formObject = Object.fromEntries(formData.entries());
-        
+
         try {
-            // Send form data to JSON file or server
-            await fetch(jsonURL, {
+            // Send form data to your server or JSON file
+            await fetch('https://kukkikd.github.io/weddingkr/rsvp.json', {
                 method: 'POST', // or 'PUT' if updating existing data
                 headers: {
                     'Content-Type': 'application/json',
@@ -26,9 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify(formObject),
             });
 
-            // Show the confirmation message
-            rsvpForm.style.display = 'none'; // Hide the form
-            confirmationMessage.style.display = 'block'; // Show the thank you message
+            // Redirect to the thank you page
+            window.location.href = thankYouPageURL;
         } catch (error) {
             console.error('Error sending RSVP data:', error);
         }
