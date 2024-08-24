@@ -264,3 +264,11 @@ footer{
 .rsvp-container button:hover {
     background-color: var(--primary-color);
 }
+
+/*----------Thank you page-----------*/
+
+.thank-you-container {
+    text-align: center;
+    margin: 30px auto;
+    color: var(--text-color);
+}

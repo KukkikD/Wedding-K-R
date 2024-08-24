@@ -1,5 +1,5 @@
 // Define the URL for the thank you page
-const thankYouPageURL = 'https://kukkikd.github.io/wedding/thankyou.html';
+const thankYouPageURL = 'https://kukkikd.github.io/wedding/thank_you.html';
 
 document.addEventListener('DOMContentLoaded', () => {
     const rsvpForm = document.getElementById('rsvp-form');
