@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rob & Kukkik's Wedding RSVP</title>
+    <meta name="description" content="Rob & Kukkik Invitation website">
+    <meta name="author" content="Amornrat Dizon Howard">
     <link rel="stylesheet" href="styles/card.css">
     <link type="text/css" rel="stylesheet" href="styles/card-large.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -39,22 +41,22 @@
 
         <div class="rsvp-container">
             <h2>💌RSVP Form💌</h2>
-            <form id="rsvp-form"> <!-- Ensure the ID matches the JavaScript code -->
+            <form id="rsvp-form" action="/submit-rsvp" method="POST">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" name="firstName" required>
-                
+            
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" name="lastName" required>
-                
+            
                 <label for="adults">Number of Adults:</label>
                 <input type="number" id="adults" name="adults" min="0" required>
-                
+            
                 <label for="youths">Number of Youth (ages 12-17):</label>
                 <input type="number" id="youths" name="youths" min="0" required>
-                
+            
                 <label for="children">Number of Children (under 12):</label>
                 <input type="number" id="children" name="children" min="0" required>
-                
+            
                 <button type="submit">Submit RSVP</button>
             </form>
         </div>
@@ -68,6 +70,7 @@
     
         <script src="scripts/foot.js"></script>
         <script src="scripts/rsvp.js"></script> 
+        <script src="sever.js"></script>
     
 </body>
 
