@@ -41,7 +41,7 @@
 
         <div class="rsvp-container">
             <h2>💌RSVP Form💌</h2>
-            <form id="rsvp-form" action="/submit-rsvp" method="POST">
+            <form id="rsvpForm" action="rsvn.php" method="post" onsubmit="return handleSubmit()">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" name="firstName" required>
             
@@ -69,8 +69,7 @@
     
     
         <script src="scripts/foot.js"></script>
-        <script src="scripts/rsvp.js"></script> 
-        <script src="sever.js"></script>
+        <script src="scripts/rsvp.js"></script>
     
 </body>
 
